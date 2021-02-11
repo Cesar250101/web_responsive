@@ -22,7 +22,7 @@
         <field name="model">web_responsive.view.users.form</field>
         <field name="inherit_id" ref="base.view_users_form" />
         <field name="arch" type="xml">
-            <xpath expr="//field[@name='tz']" position="after">
+            <xpath expr="//field[@name='tz_offset']" position="after">
                 <field name="chatter_position" readonly="0" />
             </xpath>
         </field>
