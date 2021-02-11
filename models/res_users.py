@@ -9,8 +9,8 @@ class ResUsers(models.Model):
 
     chatter_position = fields.Selection([
         ('normal', 'Normal'),
-        ('sided', 'sided'),
-    ], string="Chatter Position", default='Sided')
+        ('sided', 'Sided'),
+    ], string="Chatter Position", default='sided')
 
     def __init__(self, pool, cr):
         """ Override of __init__ to add access rights.
